@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+#captureVideo {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#rightPanel {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#asciiArtContainer {
+    flex: 1; /* Takes half of the available space in the flex container */
+    background-color: #000;
+    color: #FFF;
+    font-family: monospace;
+    white-space: pre;
+    overflow: auto;
+    font-size: 8px;
+}
+
+#textInput {
+    flex: 1; /* Takes the remaining half of the available space */
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+}
+
